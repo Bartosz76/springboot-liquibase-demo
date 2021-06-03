@@ -6,5 +6,6 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <include file="version/pokemonTable.xml" relativeToChangelogFile="true"/>
+    <include file="version/addPokemon.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
