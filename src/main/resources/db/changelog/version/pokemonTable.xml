@@ -5,10 +5,10 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
       http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd">
 
+    <!--schemaName had to be removed. With this schemaName, the application won't start. It tries to create a table public.anotherPokemonTable, instead of just anotherPokemonTable-->
     <changeSet id="1" author="dazikiri"> <!--The number of the change.-->
         <createTable
                 remarks="A String"
-                schemaName="public"
                 tableName="anotherPokemonTable"
                 tablespace="A String">
                 <column name="type" type="varchar(255)"/>
